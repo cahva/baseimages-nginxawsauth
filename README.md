@@ -26,5 +26,8 @@ docker run -it --rm \
 -p 8000:80 --name running-nginx my-nginx-s3
 ```
 
+### Test it
+Put something in your bucket either in AWS console or upload it using curl or Postman or whatever.. Point your browser to http://localhost:8000/yourfile.jpg. (localhost won't probably work if you started this on the commandline, inspect the running container to find it's ip)
+
 ## Versioning
 `[tag]` will be versioned with v1, v2 and so on.. "latest" is the master branch.
