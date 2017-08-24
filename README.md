@@ -21,7 +21,7 @@ docker build -t my-nginx-s3 .
 docker run -it --rm \
 -e AWS_BUCKET=[aws-bucket] \
 -e AWS_ACCESS_KEY=[aws-accesskey] \
--e AWS_SECRET_KEY=[aws-secretkey] \
+-e AWS_SECRET_ACCESS_KEY=[aws-secretkey] \
 -v `pwd`/nginx.conf.tmpl:/tmp/nginx.conf.tmpl \
 -p 8000:80 --name running-nginx my-nginx-s3
 ```

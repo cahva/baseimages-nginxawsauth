@@ -36,7 +36,7 @@ http {
             proxy_pass https://%S3_BUCKET%.s3.amazonaws.com;
 
             aws_access_key %AWS_ACCESS_KEY%;
-            aws_secret_key %AWS_SECRET_KEY%;
+            aws_secret_key %AWS_SECRET_ACCESS_KEY%;
             s3_bucket %S3_BUCKET%;
 
             proxy_set_header Authorization $s3_auth_token;
